@@ -12,6 +12,15 @@ This is a vector of fruits:
 fruits <- c("banana", "apple", "orange")
 ```
 
+## New feature
+
+Two new vectors:
+
+```{r}
+vector1 <- c(1,2,3,4,5)
+vector2 <- vector1*2
+```
+
 # Thodoris
 
 Today is Tuesday!
