@@ -15,13 +15,15 @@ library(ggplot2)
 ```
 
 ## Load data
+
 ```{r}
+#| message: false
 raw_dir <- "data/_raw/"
 data_file <- "gravier.RData"
 data_loc <- "https://github.com/ramhiser/datamicroarray/raw/master/data/"
 
 if( !dir.exists(raw_dir) ){
-  dir.create(path = raw_dir)
+  dir.create(path = raw_dir, recursive = TRUE)
 }
 if( !file.exists(str_c(raw_dir, data_file)) ){
   download.file(
@@ -32,5 +34,25 @@ load(file = str_c(raw_dir, data_file))
 ```
 
 ## Data wrangling
+
+### Clean data
+
+```{r}
+gravier_clean <- gravier |>
+  bind_cols() |>
+  as_tibble()
+write_csv(gravier_clean, "data/02_gravier_clean.csv.gz")
+
+```
+
+### Augment data
+
+```{r}
+gravier_clean_aug <- gravier_clean |>
+  mutate(y = case_when(y == "poor" ~ 1,
+                       y == "good" ~ 0)) |> 
+  relocate(early_metastasis = y)
+write_csv(gravier_clean_aug, "data/03_gravier_clean_aug.csv.gz")
+```
 
 ## Visualization
