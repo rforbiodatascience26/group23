@@ -15,13 +15,15 @@ library(ggplot2)
 ```
 
 ## Load data
+
 ```{r}
+#| message: false
 raw_dir <- "data/_raw/"
 data_file <- "gravier.RData"
 data_loc <- "https://github.com/ramhiser/datamicroarray/raw/master/data/"
 
 if( !dir.exists(raw_dir) ){
-  dir.create(path = raw_dir)
+  dir.create(path = raw_dir, recursive = TRUE)
 }
 if( !file.exists(str_c(raw_dir, data_file)) ){
   download.file(
