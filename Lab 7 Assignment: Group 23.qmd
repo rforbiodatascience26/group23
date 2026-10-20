@@ -55,4 +55,6 @@ gravier_clean_aug <- gravier_clean |>
 write_csv(gravier_clean_aug, "data/03_gravier_clean_aug.csv.gz")
 ```
 
+## Analysis
+
 ## Visualization
