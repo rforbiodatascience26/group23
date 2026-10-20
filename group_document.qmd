@@ -14,4 +14,12 @@ fruits <- c("banana", "apple", "orange")
 
 # Thodoris
 
+Today is Tuesday!
+
 # António
+
+```{r}
+num_sum <- 1 + 2 + 3 + 4
+
+num_sum * 2
+```
