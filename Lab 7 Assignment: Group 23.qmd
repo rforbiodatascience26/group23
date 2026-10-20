@@ -1,0 +1,9 @@
+---
+title: "Lab 7 Assignment: Group 23"
+format:
+  html:
+    embed-resources: true
+editor: visual
+---
+
+## 
