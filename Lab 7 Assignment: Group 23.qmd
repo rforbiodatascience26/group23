@@ -6,4 +6,16 @@ format:
 editor: visual
 ---
 
-## 
+## Load libraries
+
+```{r}
+#| message: false
+library(tidyverse)
+library(ggplot2)
+```
+
+## Load data
+
+## Data wrangling
+
+## Visualization
