@@ -6,6 +6,12 @@ editor: visual
 
 # Santiago
 
+This is a vector of fruits:
+
+```{r}
+fruits <- c("banana", "apple", "orange")
+```
+
 # Thodoris
 
 # António
