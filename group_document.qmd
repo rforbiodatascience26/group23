@@ -16,6 +16,12 @@ fruits <- c("banana", "apple", "orange")
 
 Today is Tuesday!
 
+### Multiply
+
+```{r}
+multy <- 26 * 34 *81
+```
+
 # António
 
 ```{r}
