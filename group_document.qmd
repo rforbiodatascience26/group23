@@ -23,3 +23,11 @@ num_sum <- 1 + 2 + 3 + 4
 
 num_sum * 2
 ```
+
+### Divide
+
+```{r}
+division <- num_sum / multy  
+
+division
+```
