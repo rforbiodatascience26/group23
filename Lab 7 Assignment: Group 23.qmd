@@ -6,6 +6,8 @@ format:
 editor: visual
 ---
 
+For this collaborative assignment, we decided to reuse the Gravier dataset, along with the wrangling steps performed in Lab 6, and perform a new analysis and visualization pipeline.
+
 ## Load libraries
 
 ```{r}
